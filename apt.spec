@@ -28,6 +28,14 @@ BuildRequires:  gnutls-devel
 %description
 apt is the main commandline package manager for Debian and its derivatives. It provides commandline tools for searching and managing as well as querying information about packages as well as low-level access to all features provided by the libapt-pkg and libapt-inst libraries which higher-level package managers can depend upon.
 
+%package devel
+Group: Development/Libraries
+Summary: Header files for apt
+Requires: %{name} = %{version-%{release}
+
+%description devel
+Development files for gtkglarea.
+
 %prep
 %setup -q
 
@@ -57,13 +65,16 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_libdir}/*
 %{_libexecdir}/*
-%{_includedir}/*
 %dir %{_sysconfdir}/apt
 %dir %{_sysconfdir}/apt/*.d
 %config %{_sysconfdir}/apt/sources.list
 %{_datadir}/bash-completion/completions/apt
 %doc %{_mandir}/man?/*
 %doc %{_docdir}/*
+
+%files devel
+%defattr(-, root, root)
+%{_includedir}/*
 
 %changelog
 * Fri May 01 2020 rhessing <robbert@hessing.io> - 1.8.4-1.el7
