@@ -31,7 +31,7 @@ apt is the main commandline package manager for Debian and its derivatives. It p
 %package devel
 Group: Development/Libraries
 Summary: Header files for apt
-Requires: %{name} = %{version-%{release}
+Requires: %{name} = %{version}-%{release}
 
 %description devel
 Development files for gtkglarea.
