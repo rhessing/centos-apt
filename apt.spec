@@ -66,7 +66,7 @@ rm -rf %{buildroot}
 %doc %{_docdir}/*
 
 %changelog
-* Thu May 01 2020 rhessing <robbert@hessing.io> - 1.8.4-1.el7
+* Fri May 01 2020 rhessing <robbert@hessing.io> - 1.8.4-1.el7
 - Private build and new apt version
 
 * Tue Jan 29 2019 - harbottle@room3d3.com - 1.4.9-1
