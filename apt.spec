@@ -1,6 +1,6 @@
 %define name apt
 Name:           %{name}
-Version:        1.8.4
+Version:        1.7.5
 Release:        1.el7
 Summary:        Commandline package manager for Debian and its derivatives.
 Group:          System/Packages
